@@ -115,14 +115,14 @@ const dessert = new IceCream();
 dessert.addScoop();
 
 <!-- 默认参数函数 -->
-    <!-- es5 -->
-    function greet(name, greeting) {
-    name = (typeof name !== 'undefined') ?  name : 'Student';
-    greeting = (typeof greeting !== 'undefined') ?  greeting : 'Welcome';
+<!-- es5 -->
+        function greet(name, greeting) {
+        name = (typeof name !== 'undefined') ?  name : 'Student';
+        greeting = (typeof greeting !== 'undefined') ?  greeting : 'Welcome';
 
-    return `${greeting} ${name}!`;
-    }
-    <!-- es6 -->
-    function greet(name = 'Student', greeting = 'Welcome') {
-    return `${greeting} ${name}!`;
-    }
+        return `${greeting} ${name}!`;
+        }
+<!-- es6 -->
+        function greet(name = 'Student', greeting = 'Welcome') {
+        return `${greeting} ${name}!`;
+        }
